@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  font-size: 18px;
+}
+.navlist li {
+  list-style: none;
+}
+.navlist > li {
+  display: inline-block;
+  padding: 30px 20px;
+  position: relative;
+  height: 80px;
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+}
+.carticonlink {
+  position: relative;
+  cursor: pointer;
+}
+
+.cartvalue {
+  /* background-color: red; */
+  position: absolute;
+  display: inline;
+  top: 0;
+  color: red;
+  font-weight: bold;
+  right: 0;
+  transform: translate(75%, -55%);
+  font-size: 14px;
+}
+.menuicon {
+  display: none;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #fff;
+  border: none;
+}
+.carticonlist:hover .miniCart {
+  /* color: red; */
+  visibility: visible;
+  top: 100%;
+  opacity: 1;
+}
+.miniCart {
+  background-color: #fff;
+  position: absolute;
+  top: 120%;
+  width: 450px;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  /* right: 20px; */
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, alpha); */
+}
+.close {
+  display: none;
+}
+/*
+.menuicon {
+  display: block;
+  float: right;
+}
+.navbar.responsive {
+}
+.navbar.responsive .menuicon {
+}
+.navbar.responsive a {
+} */
+@media screen and (max-width: 600px) {
+  .menuicon {
+    display: block;
+  }
+  .navlist {
+    position: fixed;
+    background-color: #fff;
+    width: 200px;
+    left: -230px;
+    top: 0;
+    height: 100%;
+    z-index: 200;
+  }
+  .navlist > li {
+    display: block;
+    padding: 12px 18px;
+    position: relative;
+    height: 80px;
+  }
+  .close {
+    position: absolute;
+    left: 210px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* background-color: red; */
+    border-radius: 50%;
+    box-sizing: border-box;
+    /* display: inline-block; */
+  }
+  .responsive .close {
+    display: block;
+  }
+  .responsive .navlist {
+    left: 0;
+  }
+  .miniCart {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+}

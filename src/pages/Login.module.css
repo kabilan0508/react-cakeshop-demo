@@ -1,0 +1,53 @@
+.loginsection {
+  height: calc(100vh - 80px - 80px);
+  display: flex;
+  min-height: 400px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ddd; */
+  transition: all 0.3s ease;
+}
+
+.loginsection p {
+  /* background-color: #ccc; */
+  /* color: blue; */
+  margin-top: 10px;
+}
+.formdesign {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 0;
+  position: relative;
+}
+.formdesign input {
+  font-size: 15px;
+  margin-top: 15px;
+  padding: 7px 10px;
+  position: relative;
+}
+.formdesign a {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.passwordshow {
+  position: absolute;
+  /* background-color: blue; */
+  color: blue;
+  right: 10px;
+  top: 83px;
+}
+.formdesign button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+}
+.changebutton {
+  cursor: pointer;
+  color: blue;
+}
