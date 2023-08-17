@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./MakeSection.module.css";
 import { useSelector } from "react-redux";
-import ProductCard from "./Productcard";
+import ProductCard from "./ProductCard";
 
 const MakeSection = () => {
   const stock = useSelector((state) => state.cakestock);
