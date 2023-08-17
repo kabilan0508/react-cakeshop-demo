@@ -7,7 +7,7 @@ import Developing from "../Developing";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
-  console.log(cart);
+  console.log("this message from cart");
   const cartItems = cart.cartItems;
   const cartlistcontent =
     cartItems.length == 0 ? (
