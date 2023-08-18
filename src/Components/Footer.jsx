@@ -4,7 +4,7 @@ import classes from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={classes.footer}>
-      <div>&copy; All rights reserved. Designed with ❤️ by Kabilan</div>
+      <div>&copy; All rights reserved. Developed with ❤️ by Kabilan</div>
     </footer>
   );
 };
