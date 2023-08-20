@@ -58,7 +58,16 @@
   border-color: transparent;
 }
 .cartbutton {
+  border: 1px solid #000;
+  width: 100%;
   background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+.minicart a {
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
 }
 @media screen and (max-width: 600px) {
   .minicart {
@@ -67,5 +76,10 @@
   }
   .minicarttotal {
     padding: 0;
+  }
+  .minicartitems {
+    flex-direction: column;
+    width: fit-content;
+    text-align: center;
   }
 }

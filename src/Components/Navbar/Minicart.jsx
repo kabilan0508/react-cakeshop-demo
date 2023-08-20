@@ -4,12 +4,13 @@ import classes from "./Minicart.module.css";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-regular-svg-icons";
+import { deleteCart } from "../../App/CartSlice";
 const Minicart = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   console.log(cart);
   const deleteItemHandler = (id) => {
-    dispatch(deleteCart(id));
+    dispatch(deleteCart({ id: id }));
   };
 
   const content = cart.cartItems.map((items) => (
@@ -39,9 +40,11 @@ const Minicart = () => {
       <button type="button" className={classes.proceedbutton}>
         Proceed to checkout
       </button>
-      <button type="button" className={classes.cartbutton}>
-        <NavLink to={"/cart"}>View cart</NavLink>
-      </button>
+      <NavLink to={"/cart"}>
+        <p type="button" className={classes.cartbutton}>
+          View cart
+        </p>
+      </NavLink>
     </div>
   );
 };

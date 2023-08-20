@@ -77,6 +77,10 @@
 .navbar.responsive a {
 } */
 @media screen and (max-width: 600px) {
+  .miniCart {
+    opacity: 1;
+    visibility: visible;
+  }
   .menuicon {
     display: block;
   }
@@ -93,7 +97,8 @@
     display: block;
     padding: 12px 18px;
     position: relative;
-    height: 80px;
+    height: 0px;
+    margin-bottom: 10px;
   }
   .close {
     position: absolute;
@@ -102,14 +107,17 @@
     height: 30px;
     width: 30px;
     text-align: center;
+    z-index: 10;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     /* background-color: red; */
     border-radius: 50%;
     box-sizing: border-box;
     /* display: inline-block; */
   }
+
   .responsive .close {
     display: block;
+    z-index: 1000;
   }
   .responsive .navlist {
     left: 0;
@@ -118,5 +126,17 @@
     position: static;
     width: 100%;
     box-shadow: none;
+  }
+  .layer {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    left: 500px;
+    top: 0;
+    /* z-index: -1; */
+    height: 100vh;
+  }
+  .responsive .layer {
+    left: 0;
   }
 }
