@@ -37,7 +37,7 @@ const Cart = () => {
       </div>
       <div className={classes.cartcontainer}>
         <div className={classes.cartlist}>{cartlistcontent}</div>
-        <div>
+        <div className={classes.carttotal}>
           <CartTotal />
         </div>
       </div>

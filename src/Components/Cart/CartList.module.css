@@ -116,3 +116,25 @@
   font-weight: 600;
   color: #aaa;
 }
+.deleteicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(251, 212, 212);
+  border-radius: 50%;
+}
+.deleteicon > * {
+  font-size: 14px;
+  color: red;
+}
+@media screen and (max-width: 600px) {
+  .details {
+    flex-wrap: wrap;
+  }
+  .details > div:first-child {
+    flex: 0 1 100%;
+    /* background-color: #ff0; */
+  }
+}

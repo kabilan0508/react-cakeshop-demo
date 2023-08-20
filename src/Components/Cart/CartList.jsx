@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./CartList.module.css";
 import img from "../../assets/img/cake.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch } from "react-redux";
 import {
   increaceQuantity,
@@ -76,11 +76,10 @@ const CartList = (props) => {
           <div className={classes.price}>{`₹ ` + props.price}</div>
         </div>
         <div>
-          <div className={classes.flexcolumns}>
+          <div className={classes.deleteicon}>
             <FontAwesomeIcon
-              icon={faTrash}
-              className={classes.deleteicon}
-              onClick={deleteButtonHandler}
+              icon={faTrashCan}
+              onClick={() => deleteButtonHandler(props.id)}
             />
           </div>
         </div>
